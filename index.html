@@ -45,19 +45,33 @@
     </nav>
   </header>
   <main>
+    <section class="fondo">
+      <section>
+        <div class="container">
+          <class class="row">
+            <div class="col-12 my-2 row-cols 1 row-cols-md-4">
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="buscador">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            </div>
+          </class>
+        </div>
+
+      </section>
       <section class="">
         <video  class="w-100 h-25 animate__animated animate__tada" src="./assets/video/SISDECARSAS(1).mp4" muted autoplay loop></video>        
       </section>
       <section class="fondo">
         <div class="container">
             <div class="row ">
-                <div class="col-2 align-self-center text-center">
+                <div class="col-5 align-self-center text-center">
                     <h4 >Registrate</h4>
                     <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
                         <i class="bi bi-box-arrow-in-right"></i> Registrate
                      </button>
                 </div>
-                <div class="col-10 ">
+                <div class="col-7 ">
                     <h4 class="text-center">Sisdecar S.A.S</h4>
                     <img src="/assets/img/sisdecarimg.png" class="img-fluid w-50 h-75 m-xxl-auto d-block mx-auto" alt="foto1" srcset="">
                 </div>
@@ -68,6 +82,8 @@
             </div>
         </div>
       </section>
+    </section>
+
     <!---->
     <!---->
       <section>
@@ -87,9 +103,22 @@
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
-            <div>
-                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists, etc.
+              <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
                 
                 <div class="dropdown mt-3">
                     <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown">
@@ -110,9 +139,12 @@
 
   
   </footer>
-<script src="./src/controllers/controladorllenado.js"> </script>
+<script src="./src/controllers/controladorTienda.js" type="module"></script>
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
+
+
+<!--freecarruseles de css https://freefrontend.com/css-carousels/-->
