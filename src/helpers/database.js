@@ -1,5 +1,4 @@
-
- export let productosBD=[
+export let productosBD=[
     {
         id:1,
         nombre:"Amarras",
@@ -207,6 +206,5 @@
         cantidad:0,
         descripcion:"Objeto que va en la base",
         fotos:['https://firebasestorage.googleapis.com/v0/b/apojtiendatcc.appspot.com/o/TubosuperiortraseroLogo.png?alt=media&token=8eba9c9a-f8a2-488d-9c45-80e5fe7c7c0c']
-    },
-    
+    }
     ]
