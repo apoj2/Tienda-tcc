@@ -24,19 +24,17 @@ export function llenarProductos(productos){
         let precioproducto=document.createElement("h2")
         precioproducto.textContent="$"+producto.precio
 
-        //deteccion de evento mouse
+        let descripcionproducto=document.createElement("p")
+        descripcionproducto.textContent=producto.descripcion
+        descripcionproducto.classList.add("d-none")
 
-        fotoproducto.addEventListener("mouseover",function(evento){
-            fotoproducto.src=producto.fotos[1]
-        })
-        
-        fotoproducto.addEventListener("mouseleave",function(evento){
-            fotoproducto.src=producto.fotos[0]
-        })
+        //deteccion de evento mouse
+       
 
         tarjeta.appendChild(fotoproducto)
         tarjeta.appendChild(nombreproducto)
         tarjeta.appendChild(precioproducto)
+        tarjeta.appendChild(descripcionproducto)
         
         columna.appendChild(tarjeta)
         
