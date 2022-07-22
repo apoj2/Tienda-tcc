@@ -4,7 +4,7 @@ import {llenarProductos} from './controladorLlenado.js'
 import {buscarProductos} from './ControladorBuscar.js'
 import {ampliarproductos} from './controladorClicAmpliarProducto.js'
 
-console.log(productosBD)
+
 
 llenarProductos(productosBD)
 

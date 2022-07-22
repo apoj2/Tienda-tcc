@@ -1,3 +1,5 @@
+//popularidad=1 hasta 5
+
 export let productosBD=[
     {
         id:1,
