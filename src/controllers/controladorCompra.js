@@ -23,6 +23,9 @@ textonombre.textContent=producto.objeto
 let precioproducto=document.getElementById('precioproducto')
 precioproducto.textContent=producto.precio
 
+let descripcionproducto=document.getElementById("descripcionproducto")
+descripcionproducto.textContent=producto.descripcion
+
 
 let agregarevento= document.getElementById("agregaralcarrito")
 
@@ -31,6 +34,13 @@ let agregarevento= document.getElementById("agregaralcarrito")
 
 
 agregarevento.addEventListener("click",function(evento){
+    let alerta=document.getElementById("alerta")
+    alerta.classList.remove("invisible")
+
+    setTimeout(function(){
+        alerta.classList.add("invisible")
+    },3000)
+
     let cantidad=document.getElementById("cantidad").value
     producto.cantidad=cantidad
 //agregando elemento al arreglo

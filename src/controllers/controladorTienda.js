@@ -18,7 +18,7 @@ fila.addEventListener("click",function(evento){
     console.log(producto)
     //almacenar en el local storage la informacion del producto seleccionado
     localStorage.setItem('infoProducto',JSON.stringify(producto) )
-    window.location.href='./src/views/Infoproducto.html'
+    window.location.href='./Infoproducto.html'
 
 })
 

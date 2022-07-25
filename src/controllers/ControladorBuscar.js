@@ -1,5 +1,6 @@
 import{productosBD} from '../helpers/database.js'
 import{llenarProductos} from'./ControladorLlenado.js'
+
 export function buscarProductos(){
     
     let buscador=document.getElementById("buscador")
