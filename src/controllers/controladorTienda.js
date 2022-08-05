@@ -4,7 +4,7 @@ import {llenarProductos} from './controladorLlenado.js'
 import {buscarProductos} from './ControladorBuscar.js'
 import {ampliarproductos} from './controladorClicAmpliarProducto.js'
 
-
+console.log(productosBD)
 
 llenarProductos(productosBD)
 
@@ -14,13 +14,17 @@ buscarProductos(productosBD)
 let fila =document.getElementById('fila')
 
 fila.addEventListener("click",function(evento){
+    
+    if(evento.target.parentElement.classList.contains("card") == true ){
     let producto = ampliarproductos(evento)
-    console.log(producto)
+    
     //almacenar en el local storage la informacion del producto seleccionado
     localStorage.setItem('infoProducto',JSON.stringify(producto) )
     window.location.href='./Infoproducto.html'
+}      
 
 })
+
 
 
 

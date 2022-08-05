@@ -1,8 +1,6 @@
 export function llenarResumen(fotoURL,nombreMensaje,banderaBoton,banderaPrecio,precioProducto,banderaCantidad,cantidadProducto){
     let contenedor=document.getElementById("contenedor")
 
-    contenedor.innerHTML=""
-
     let fila=document.createElement("div")
     fila.classList.add("row","row-cols-1","row-cols-md-2","my-5")
 
@@ -20,10 +18,11 @@ export function llenarResumen(fotoURL,nombreMensaje,banderaBoton,banderaPrecio,p
     mensaje.classList.add("text-center")
     mensaje.textContent=nombreMensaje
 
+
     let boton=document.createElement("a")
     boton.classList.add("btn","btn-primary","w-50","d-block","mx-auto")
     boton.textContent="Ir a la tienda"
-    boton.setAttribute("href","./index.html")
+    boton.setAttribute("href","./tienda.html")
     
     let precio=document.createElement("h4")
     precio.textContent=precioProducto

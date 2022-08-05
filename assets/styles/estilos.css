@@ -8,3 +8,10 @@
 .fuentei{
     font-size: 100px;
 }
+.estrellapuntaje{
+    width: 60px;
+}
+
+.fondomenu{
+    background-color: transparent !important;
+}

@@ -34,6 +34,7 @@ let agregarevento= document.getElementById("agregaralcarrito")
 
 
 agregarevento.addEventListener("click",function(evento){
+
     let cantidadcarrito=document.getElementById("cantidadcarrito")
     cantidadcarrito.classList.remove("invisible")
 
@@ -49,8 +50,10 @@ agregarevento.addEventListener("click",function(evento){
 //agregando elemento al arreglo
     carrito.push(producto)
     
-   localStorage.setItem("carrito",JSON.stringify(carrito))
+    localStorage.setItem("carrito",JSON.stringify(carrito))
     //almaceno el carrito en el localstorage
+ 
+           
 
     
 })
