@@ -21,12 +21,12 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Sisdecar</a>
+          <a href=""><img src="../../assets/img/logoportada.png" alt="" class="img-fluid w-100"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
               </li>
@@ -36,17 +36,17 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">¿Quienes Somos?</a>
               </li>
-  
+              <ul class="navbar-nav ms-auto me-5">
+                <li class="nav-item active">
+                <a href="./Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
+                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill " id="cantidadcarrito">
+                 
+                </span>
+                </li>
+              
+              </ul>
             </ul>
-            <ul class="navbar-nav ms-auto me-5">
-              <li class="nav-item active">
-              <a href="./Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
-              <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill invisible" id="cantidadcarrito">
-               99+
-              </span>
-              </li>
-            
-            </ul>
+          
           </div>
         </div>
     </nav>
@@ -68,8 +68,66 @@
         </section>
       
     </main>
-    <footer>
-
+    <footer class="bg-dark text-light d-block text-center ">
+      <div class="linksimportantes mx-5  h-100">
+                       
+        <div class="row  row-cols-1 row-cols-md-3 h-100">
+          
+            <div class="col ">
+              <h2>Atencion al cliente</h2>
+              <ul class="links">
+                  <li>
+                      <a class="linksli" href="">Preguntas Frecuentes</a>
+                  </li>
+                  <li>
+                      <a  class="linksli" href="">Pedidos y Envios</a>
+                  </li>
+                  <li>
+                      <a  class="linksli" href="">Garantia</a>
+                  </li>
+                  <li>
+                      <a  class="linksli" href="">Condiciones de compra</a>
+                  </li>
+                  <li>
+                      <a  class="linksli" href="">Privacidad y Cookies</a>
+                  </li>
+                  <li>
+                      <a class="linksli" href="">Avisos legales</a>
+                  </li>
+              </ul>
+          </div>
+          <div class="col  ">
+              <h2>Nosotros</h2>
+              <ul class="links">
+                       <li>
+                      <a  class="linksli" href="/src/html/Quienessomos.html">Quienes Somos</a>
+                       </li>
+                      <li>
+                          <a class="linksli"  href="">Afiliados</a>
+                      </li>
+                      <li>
+                          <a  class="linksli" href="">Blog</a>
+                      </li>
+                  </li>
+              </ul>
+          </div>
+          <div class="col ">
+              <h2>Tienda</h2>
+              <ul class="links ">
+                  <li>
+                      <a  class="linksli" href="">Servicios</a>
+                  </li>
+                  <li>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.6881046482554!2d-75.55825628573406!3d6.304647327419141!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f171559ef81%3A0x81add99922fd153a!2sSISDECAR!5e0!3m2!1sen!2sco!4v1657316525570!5m2!1sen!2sco" style="border:0;" class="w-100" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  </li>
+              </ul>
+          </div>
+          
+        </div>
+     
+   
+    </div>
+    
     </footer>
     <script src="/src/controllers/controladorResumenCompra.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"  integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

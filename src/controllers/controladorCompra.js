@@ -1,4 +1,7 @@
 
+
+
+
 console.log("hola estamos comprando")
 let producto=JSON.parse(localStorage.getItem('infoProducto'))
 
@@ -27,6 +30,10 @@ let descripcionproducto=document.getElementById("descripcionproducto")
 descripcionproducto.textContent=producto.descripcion
 
 
+
+
+
+
 let agregarevento= document.getElementById("agregaralcarrito")
 
 
@@ -53,6 +60,15 @@ agregarevento.addEventListener("click",function(evento){
     localStorage.setItem("carrito",JSON.stringify(carrito))
     //almaceno el carrito en el localstorage
  
+    let suma=0
+
+    carrito.forEach(function(producto){
+        suma= Number(producto.cantidad)+suma
+    })
+
+    cantidadcarrito.textContent=suma
+
+    localStorage.setItem("cantidadcarrito",suma)
            
 
     

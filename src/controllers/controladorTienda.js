@@ -4,6 +4,9 @@ import {llenarProductos} from './controladorLlenado.js'
 import {buscarProductos} from './ControladorBuscar.js'
 import {ampliarproductos} from './controladorClicAmpliarProducto.js'
 
+
+let cantidaddecarrito=localStorage.getItem('cantidadcarrito')
+
 console.log(productosBD)
 
 llenarProductos(productosBD)
@@ -24,6 +27,11 @@ fila.addEventListener("click",function(evento){
 }      
 
 })
+
+let cantidadcarrito=document.getElementById('cantidadcarrito')
+
+cantidadcarrito.textContent=cantidaddecarrito
+
 
 
 

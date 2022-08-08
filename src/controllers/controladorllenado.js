@@ -3,6 +3,7 @@ export function llenarProductos(productos){
     
     //el espacio donde voy a pintar
     let fila=document.getElementById("fila")
+    console.log(fila)
     
     fila.innerHTML=''
 
@@ -12,7 +13,7 @@ export function llenarProductos(productos){
         columna.classList.add("col-12","my-3")
         
         let tarjeta=document.createElement("div")
-        tarjeta.classList.add("card","h-100","text-center","shadow")
+        tarjeta.classList.add("card","h-100","w-75","text-center","shadow","mx-auto")
 
         let fotoproducto=document.createElement("img")
         fotoproducto.classList.add("img-fluid","w-100")
@@ -28,8 +29,12 @@ export function llenarProductos(productos){
         descripcionproducto.textContent=producto.descripcion
         descripcionproducto.classList.add("d-none")
 
+        let subtotal=document.createElement("h4")
+        subtotal.textContent=producto.subtotal
+        
+
         let filaestrellas=document.createElement("div")
-        filaestrellas.classList.add("row","row-cols-5","row-cols-md-5","d-flex","bg-danger","w-100","mx-auto")
+        filaestrellas.classList.add("row","row-cols-5","row-cols-md-5","d-flex","w-100","mx-auto","bg-light")
 
         let columnaestrella=document.createElement("div")
         columnaestrella.classList.add("col")
@@ -67,6 +72,7 @@ export function llenarProductos(productos){
         tarjeta.appendChild(nombreproducto)
         tarjeta.appendChild(precioproducto)
         tarjeta.appendChild(descripcionproducto)
+        tarjeta.append(subtotal)
         tarjeta.appendChild(filaestrellas)
         filaestrellas.appendChild(columnaestrella)
         filaestrellas.appendChild(columnaestrella1)

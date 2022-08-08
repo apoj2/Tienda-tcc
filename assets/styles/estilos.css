@@ -15,3 +15,13 @@
 .fondomenu{
     background-color: transparent !important;
 }
+.links{
+    list-style: none;
+}
+.linksli{
+    text-decoration: none;
+    color: white;
+}
+.bg-yellow{
+    background-color: yellow;
+}
