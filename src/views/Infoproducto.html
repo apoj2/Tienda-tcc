@@ -21,25 +21,25 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-          <a href=""><img src="../../assets/img/logoportada.png" alt="" class="img-fluid w-100"> </a>
+          <a href="../../index.html"><img src="../../assets/img/logoportada.png" alt="" class="img-fluid w-100"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./tienda.html">Tienda</a>
+                <a class="nav-link active" href="./tienda.html">Tienda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">¿Quienes Somos?</a>
+                <a class="nav-link" href="./Quienessomos.html">¿Quienes Somos?</a>
               </li>
               <ul class="navbar-nav ms-auto me-5">
                 <li class="nav-item active">
                 <a href="./Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
-                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill invisible" id="cantidadcarrito">
+                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill px-2" id="cantidadcarrito">
                  
                 </span>
                 </li>
@@ -50,27 +50,61 @@
           </div>
         </div>
     </nav>
+    <section class="">
+      <div class="container-fluid w-100">
+          <div class="row row-cols-12 row-cols-md-5 bg-danger" id="navcategorias">
+        
+          </div>
+      </div>
+    </section>
     </header>
     <main>
         <section>
           <div class="container">
-            <div class="row row-cols-1 row-cols-md-3 d-flex my-3 shadow ">
+            <div class="row row-cols-12 row-cols-md-3 d-flex my-3 shadow p-3">
               <div class="col-12 col-md-5">
-                <img src="" id="imagen1" alt="" class="img-fluid w-100 align-self-center">
+                <div class="row row-cols-12 row-cols-md-12 my-4">
+                  <div class="col col-12 col-md-12">
+                    <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" id="carrusel1">
+                          <img src="" id="imagen1" alt="" class="img-fluid w-100 mx-auto m-xxl-auto d-block mb-4 border">
+                        </div>
+                        <div class="carousel-item" id="carrusel2">
+                          <img src="../../assets/img/carritovacio.png" id="imagen2" class="img-fluid w-100 mx-auto m-xxl-auto d-block mb-4 border" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev h-25 my-auto" id="btn-1" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next h-25 my-auto" id="btn-2" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="col col-4 col-md-6">
+                    <img src="" id="imagenposicionada1" alt="" class="img-fluid w-100 mx-auto m-xxl-auto d-block border">
+                  </div>
+                  <div class="col col-4 col-md-6">
+                    <img src="../../assets/img/carritovacio.png" id="imagenposicionada2" alt="" class="img-fluid w-100 mx-auto m-xxl-auto d-block border ">
+                  </div>
+                </div>
               </div>
-              <div class="col-12 col-md-4 bg-light rounded my-3 shadow ">
+              <div class="col col-11 col-md-3 bg-light rounded my-3 mx-3 shadow ">
                   <h1 id="nombreproducto">Nombre producto</h1>
                   <h2 id="precioproducto"></h2>
                   <p id="descripcionproducto"></p>
-                  <h4 id="subtotal"></h4>
+                  
               </div>
-              <div class="col-12 col-md-2 card my-3">
+              <div class="col col-11 col-md-2 card my-3 mx-3 h-100 ">
                   
                   <img src="/assets/img/visa.pn" alt="" class="img-fluid w-100">
                   <img src="/assets/img/maestro.pn" alt="" class="img-fluid w-100">
                   <img src="/assets/img/american-express.pn" alt="" class="img-fluid w-100">                  
-                  <h2><i class="bi bi-truck"></i>Envio a nivel nacional</h2>
-                  <div class="d-flex">
+                  <h4 class="text-center"><i class="bi bi-truck"></i>Envio a nivel nacional</h4>
+                  <div class="d-flex mx-auto m-xxl-auto d-block my-3">
                     <i class="bi bi-star ms-2" id="stars"></i>
                     <i class="bi bi-star ms-2" id="stars"></i>
                     <i class="bi bi-star ms-2" id="stars"></i>
@@ -78,16 +112,16 @@
                     <i class="bi bi-star ms-2" id="stars"></i>
                   </div>
                   
-                  <h6>Conoce los tiempos y las formas de envio</h6>
-                  <h2><i class="bi bi-arrow-clockwise"></i>Devolucion Gratis</h2>
-                  <h3>Tienes 30 dias desde que la recibes</h3>
+                  <h6 class="text-center my-1">Conoce los tiempos y las formas de envio</h6>
+                  <h4 class="text-center my-3"><i class="bi bi-arrow-clockwise"></i>Devolucion Gratis</h4>
+                  <h3 class="text-center">Tienes 30 dias desde que la recibes</h3>
                   <div class="my-3">
                     <input type="number" class="w-100" min="1" max="20" name="" placeholder="1" id="cantidad" value="1">
                   </div>
                   <div class="my-2">
                     <input type="button" class="btn btn-primary w-100" value="Añadir al carrito" id="agregaralcarrito">
                   </div>
-                  <div class="alert alert-success mt-4 invisible" role="alert" id="alerta">
+                  <div class="alert alert-success mt-4 invisible d-none" role="alert" id="alerta">
                      exito agregando el producto
                   </div>
 
@@ -95,6 +129,65 @@
             </div>
           </div>
         </section>
+
+        <section>
+          <div class="row row-cols-12 row-cols-md-12 w-100">
+            <div class="col col-12 col-md-9">
+              
+        <div id="carouselExampleIndicators" class="carousel slide container" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <section>
+                <div class="row row-cols-12 row-cols-md-4 w-100" id="fila1">
+                     
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section>
+                <div class="row row-cols-12 row-cols-md-4 w-100" id="fila2">
+                     
+                </div>
+              </section>
+            </div>
+            <div class="carousel-item">
+              <section>
+                <div class="row row-cols-12 row-cols-md-4 w-100" id="fila3">
+                     
+                </div>
+              </section>
+            </div>
+    
+          </div>
+          <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden ">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+            </div>
+            <div class="col col-12 col-md-3 ">
+                <img src="../../assets/img/Imagenes/LogosIndexyServicios/CintasReflectivasLogo.png" class="w-100 img-fluid border my-3 mx-auto m-xxl-auto d-block" alt="">
+            </div>
+          </div>
+        </section>
+
+        <section class="border-top">
+         <div class="container">
+          <div class="row row-cols-12 row-cols-md-3 w-100" id="fila">
+               
+          </div>
+         </div>
+        </section>
+
     </main>
     <footer class="bg-dark text-light d-block text-center ">
       <div class="linksimportantes mx-5  h-100">

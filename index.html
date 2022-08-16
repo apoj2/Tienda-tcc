@@ -19,9 +19,9 @@
 </head>
 <body class="fuente " id="1">
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark"> 
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-light nav w-100"> 
         <div class="container-fluid">
-          <a href=""><img src="./assets/img/logoportada.png" alt="" class="img-fluid w-100"></a>
+          <a href="#"><img src="./assets/img/logoportada.png" alt="" class="img-fluid w-100"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,17 +31,17 @@
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./src/views/tienda.html">Tienda</a>
+                <a class="nav-link active" href="./src/views/tienda.html">Tienda</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link" href="./src/views/">¿Quienes Somos?</a>
+                <a class="nav-link active" href="./src/views/Quienessomos.html">¿Quienes Somos?</a>
               </li>
               <ul class="navbar-nav ms-auto me-5">
                 <li class="nav-item active">
-                <a href="./Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
+                <a href="./src/views/Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
                 
-                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill" id="cantidadcarrito">
+                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill  px-2" id="cantidadcarrito">
                 </span>
                 </li>
               
@@ -57,6 +57,26 @@
 
       <section class="">
         <video  class="w-100 h-25" src="./assets/video/SISDECARSAS(1).mp4" muted autoplay loop></video>        
+      </section>
+      <section class="">
+        <div class="container my-5">
+            <div class="row ">
+              <div class="col-12 text-center my-5 bg-yellow">
+                <div class="">
+                  <h2 class="text-secondary">¿Quienes somos?</h2>
+                  <p>Somos una empresa dedicada a la realizacion de sistemas de seguridad para vehiculos de carga pesada, estos equipos
+                    estan capacitados para realizar su trabajo de manera eficiente y con una de las mejores calidades del mercado,
+                    somos mas que una empresa, somos tu seguridad, somos tu regreso y nos preocupamos por tu vida.
+                  </p>
+                  <a href="./src/views/Quienessomos.html" class="btn btn-outline-secondary rounded-0 my-4">Conocenos</a>
+                </div>
+              </div>
+              
+            </div>
+            <div class="row">
+              
+            </div>
+        </div>
       </section>
       <section>
         <div class="container shadow">
@@ -86,7 +106,57 @@
 
     <!---->
     <!---->
-  
+    <section>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header bg-yellow">
+              <h5 class="offcanvas-title " id="offcanvasExampleLabel">Registro</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+    <section class="bg-yellow w-100 h-25">
+      <img src="./assets/img/logoportada.png" class="img-fluid d-block m-xxl-auto mx-auto" alt=""> 
+          
+      </section>
+      <section class="bg-yellow">
+      <div class="row row-cols-12 row-cols-md-2 ms-5 mt-5 mb-2">
+        <div class="col col-12 col-md-4">
+          <a href="" class="text-light btn btn-success"><i class="bi bi-whatsapp iconoscontacto"></i></a>
+        </div>
+        <div class="col col-12 col-md-4">
+          <a href="" class="text-light btn btn-primary"><i class="bi bi-messenger iconoscontacto"></i></a>
+        </div>
+        <div class="col col-12 col-md-4">
+          <a href="" class="text-light btn btn-danger"><i class="bi bi-envelope iconoscontacto"></i></a>
+        </div>
+      </div>
+      </section>
+    
+          <div class="offcanvas-body">
+    
+            <form class="">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label text-danger">Registrate con nosotros</label>
+      </div>
+             <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Mail</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">El email es necesario para el registro.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="mb-3">
+              <div id="emailHelp" class="form-text text-center"></i>Al darle al boton acepto el tratamiento de datos.</div>
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-primary m-xxl-auto mx-auto d-block">Registrar</button>
+              </div>
+            </form>
+          
+          
+          </div>
+      </div>
+    </section>
     <!---->
       <section>
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
@@ -177,7 +247,7 @@
   </div>
   
   </footer>
-<script src="./src/controllers/controladorBolita.js" type="module"></script>
+<script src="./src/controllers/controladorIndex.js" type="module"></script>
 
     <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>

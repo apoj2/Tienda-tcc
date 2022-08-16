@@ -19,93 +19,154 @@
 </head>
 <body class="fuente " id="1">
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
-          <a href=""><img src="../../assets/img/logoportada.png" alt="" class="img-fluid w-100"> </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Tienda</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link">¿Quienes Somos?</a>
-              </li>
-              <ul class="navbar-nav ms-auto me-5">
-                <li class="nav-item active">
-                <a href="./Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
-                
-                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill" id="cantidadcarrito">
-                </span>
+      <section class=" w-100">
+        <nav class="navbar navbar-expand-lg  bg-dark navbar-dark w-100">
+          <div class="container-fluid">
+            <a href="../../index.html"><img src="../../assets/img/logoportada.png" alt="" class="img-fluid w-100"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
                 </li>
-              
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Tienda</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./Quienessomos.html">¿Quienes Somos?</a>
+                </li>
+                <ul class="navbar-nav ms-auto me-5">
+                  <li class="nav-item text-light active">
+                  <a href="./Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
+                  
+                  <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill px-2" id="cantidadcarrito">
+                  </span>
+                  </li>
+                
+                </ul>
               </ul>
-            </ul>
+            
+            </div>
+          </div>
+      </nav>
+      <section class="">
+        <div class="container-fluid w-100">
+            <div class="row row-cols-12 row-cols-md-5 bg-danger text-dark" id="navcategorias">
           
-          </div>
+            </div>
         </div>
-    </nav>
-    <section class="">
-      <div class="container-fluid w-100">
-          <div class="row row-cols-12 row-cols-md-12">
-              <div class="col col-12 col-md-12 bg-danger w-100">
-                  <h2 class="mx-5 text-light">categorias</h2>
-              </div>
-          </div>
-      </div>
-    </section>
+      </section>
+      </section>
   </header>
   <main>
-    <section class="bg-light">
-      <video  class="w-50 h-25" src="./assets/video/SISDECARSAS(1).mp4" muted autoplay loop></video>        
-    </section>
-<section>
-  <section>
-
-    <section class="mt-5">
-      <div class="container w-100">
-          <div class="row row-cols-12 row-cols-md-12">
-              <div class="col col-12 col-md-12 bg-danger w-100">
-                  <h2 class="mx-5 text-light">Tienda</h2>
-              </div>
+    <section class="w-100">   
+          <div class=" w-100" id="navcategorias">
+             <img src="../../assets/img/bannertienda.png" alt="" class="w-100 img-fluid">
           </div>
-      </div>
     </section>
-    <div class="container shadow">
-    <!---->
-  
-        <section>
-          <div class="container">
-            <class class="row">
-              <div class="col-12 my-2 row-cols 1 row-cols-md-4">
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="buscador">
-                  
-                </form>
-              </div>
-            </class>
+    <div id="carouselExampleIndicators" class="carousel slide my-4" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <section>
+            <div class="row row-cols-12 row-cols-md-4 w-100" id="fila1">
+                 
+            </div>
+          </section>
         </div>
-        </section>
-    <!---->
-      <section>
-        <div class="container my-5">
-              <div class="row row-cols-1 row-cols-md-3 tienda" id="fila">
-                
-                  
+        <div class="carousel-item">
+          <section>
+            <div class="row row-cols-12 row-cols-md-4 w-100" id="fila2">
+                 
+            </div>
+          </section>
+        </div>
+        <div class="carousel-item">
+          <section>
+            <div class="row row-cols-12 row-cols-md-4 w-100" id="fila3">
+                 
+            </div>
+          </section>
+        </div>
+
+      </div>
+      <button class="carousel-control-prev text-dark" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden ">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    
+   
+    
+<div>
   
-              </div>
+  <div class="row row-cols-12 row-cols-md-12 w-100 mx-auto m-xxl-auto">
+    <div class="col col-12 col-md-12 bg-danger ">
+        <h2 class="mx-5 text-light" id="tienda">Tienda</h2>
+    </div>
+    
+</div>
+  <div class="row row-cols-12 row-cols-md-2 w-100 shadow mx-auto m-xxl-auto">
+    <div class="col col-12 col-md-3">
+      <section class="mt-5 container">
+        <div class="row row-cols-12 row-cols-md-12 w-100 h-100 bg-danger">
+          <div class="col col-12 col-md-12 shadow">
+            <img src="../../assets/img/logoportada.png" class="img-fluid mx-auto m-xxl-auto d-block p-3" alt="">
+          </div>
+          <div class="col col-12 col-md-12" id="navcategoriaslateral">
+        
+          </div>
         </div>
       </section>
     </div>
-  </section>
-
-  </section>
-    <!---->
+    <div class="col col-12 col-md-9">
+    
+      <section>
+    
+    
+        <div class="shadow mx-auto m-xxl-auto ">
+        <!---->
+        
+      
+            <section class="shadow w-100">
+              <div class="container mt-5">
+                <div class="row">
+                  <div class="col-12 my-2 row-cols-12 row-cols-md-12">
+                    <form class="d-flex">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="buscador">
+                      
+                    </form>
+                  </div>
+                </div>
+            </div>
+            </section>
+        <!---->
+          <section>
+            <div class="container my-5">
+                  <div class="row row-cols-1 row-cols-md-3 tienda w-100 mx-auto m-xxl-auto" id="fila">
+                    
+                      
+      
+                  </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </div>
+  </div>
+  
+</div>    <!---->
       
   </main>
   <footer class="bg-dark text-light d-block text-center ">

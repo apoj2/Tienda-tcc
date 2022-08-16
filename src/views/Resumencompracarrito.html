@@ -21,25 +21,25 @@
     <header>
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
-          <a href=""><img src="../../assets/img/logoportada.png" alt="" class="img-fluid w-100"> </a>
+          <a href="../../index.html"><img src="../../assets/img/logoportada.png" alt="" class="img-fluid w-100"> </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="../../index.html">Inicio</a>
+                <a class="nav-link" aria-current="page" href="../../index.html">Inicio</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./tienda.html">Tienda</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">¿Quienes Somos?</a>
+                <a class="nav-link" href="./Quienessomos.html">¿Quienes Somos?</a>
               </li>
               <ul class="navbar-nav ms-auto me-5">
                 <li class="nav-item active">
                 <a href="./Resumencompracarrito.html"><i class="bi bi-cart4 fs-3"></i></a>
-                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill " id="cantidadcarrito">
+                <span class="position-absolute top-10 start-10 translate-middle bg-danger rounded-pill px-2" id="cantidadcarrito">
                  
                 </span>
                 </li>
@@ -50,6 +50,13 @@
           </div>
         </div>
     </nav>
+    <section class="">
+      <div class="container-fluid w-100">
+          <div class="row row-cols-12 row-cols-md-5 bg-danger" id="navcategorias">
+        
+          </div>
+      </div>
+    </section>
     </header>
     <main>
         <section>
@@ -59,13 +66,17 @@
         </section>
         <section>
           <div class="container"> 
-            <div class="row row-cols-1 row-cols-md-1 mb-5">
-              <div class="col col-12 col-md-12">
+            <div class="row row-cols-1 row-cols-md-2 mb-5">
+              <div class="col col-12 col-md-5">
                    <button type="button" class="btn btn-primary" id="botonlimpiar">Limpiar</button>
+              </div>
+              <div class="col col-12 col-md-6 shadow fw-bold text-center" id="totalcompra"">
+                
               </div>
             </div>
           </div>
         </section>
+  
       
     </main>
     <footer class="bg-dark text-light d-block text-center ">

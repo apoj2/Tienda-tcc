@@ -54,6 +54,7 @@ export function llenarResumen(fotoURL,nombreMensaje,banderaBoton,banderaPrecio,p
     if(banderaSubtotal){
         columna2.appendChild(subtotal)
     }
+
     fila.appendChild(columna1)
     fila.appendChild(columna2)
     contenedor.appendChild(fila)

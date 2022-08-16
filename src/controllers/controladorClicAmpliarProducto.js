@@ -6,7 +6,7 @@ export function ampliarproductos(evento){
     objeto:evento.target.parentElement.querySelector("h3").textContent,
     precio:evento.target.parentElement.querySelector("h2").textContent,
     descripcion:evento.target.parentElement.querySelector("p").textContent,
-    subtotal:evento.target.parentElement.querySelector("h4").textContent
+    categoria:evento.target.parentElement.querySelector("h4").textContent
     }
     return(objetoproducto)
   

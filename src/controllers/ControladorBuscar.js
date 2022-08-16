@@ -1,7 +1,7 @@
 import{productosBD} from '../helpers/database.js'
 import{llenarProductos} from'./ControladorLlenado.js'
 
-export function buscarProductos(){
+export function buscarProductos(basededatosproducto){
     
     let buscador=document.getElementById("buscador")
 
@@ -9,7 +9,7 @@ export function buscarProductos(){
     buscador.addEventListener("keyup",function(evento){
         let productoBuscado=evento.target.value
 
-        let filtro=productosBD.filter(function(producto){
+        let filtro=basededatosproducto.filter(function(producto){
             return producto.nombre.toLowerCase().includes(productoBuscado.toLowerCase())
         })
      console.log(filtro)

@@ -1,9 +1,9 @@
 
-export function llenarProductos(productos){
+export function llenarProductosCarrusel(filahtml,productos){
     
-    //el espacio donde voy a pintar
-    let fila=document.getElementById("fila")
-    fila.innerHTML=''
+    let fila=document.getElementById(filahtml)
+fila.innerHTML=''
+    //el espacio donde voy a pinta
 
     productos.forEach(function(producto){
         
@@ -11,33 +11,22 @@ export function llenarProductos(productos){
         columna.classList.add("col-12","my-3")
         
         let tarjeta=document.createElement("div")
-        tarjeta.classList.add("card","h-100","w-75","text-center","mx-auto","cardproductos")
-        tarjeta.addEventListener("mouseover",function(evento){
-    
-            if(evento.target.parentElement.classList.contains("card") == true ){
-                
-                this.classList.add("shadow") //almacenar en el local storage la informacion del producto seleccionado
-        }      
-        
-        })
-        tarjeta.addEventListener("mouseout",function(evento){
-    
-            if(evento.target.parentElement.classList.contains("card") == true ){
-                
-                this.classList.remove("shadow") //almacenar en el local storage la informacion del producto seleccionado
-        }      
-        
-        })
-     
+        tarjeta.classList.add("card","cardproductos","h-100","w-75","text-center","shadow","mx-auto")
+
+        let promocion = document.createElement("div")
+        promocion.classList.add("fw-bold","bg-danger","container","w-50","rounded-pill","position-absolute","start-50","m-2","shadow")
+        promocion.textContent='Promocion'
+
         let fotoproducto=document.createElement("img")
         fotoproducto.classList.add("img-fluid","w-100")
         fotoproducto.src=producto.fotos[0]
 
         let nombreproducto=document.createElement("h3")
-        nombreproducto.classList.add("fs-5")
+        nombreproducto.classList.add("fs-6")
         nombreproducto.textContent=producto.nombre
 
         let precioproducto=document.createElement("h2")
+        precioproducto.classList.add("text-decoration-line-through")
         precioproducto.textContent="$"+producto.precio
 
         let descripcionproducto=document.createElement("p")
@@ -83,12 +72,13 @@ export function llenarProductos(productos){
 
         //deteccion de evento mouse
        
-
+        
         tarjeta.appendChild(fotoproducto)
         tarjeta.appendChild(nombreproducto)
         tarjeta.appendChild(precioproducto)
         tarjeta.appendChild(descripcionproducto)
         tarjeta.appendChild(categoria)
+        tarjeta.appendChild(promocion)
         tarjeta.appendChild(filaestrellas)
         filaestrellas.appendChild(columnaestrella)
         filaestrellas.appendChild(columnaestrella1)
@@ -122,7 +112,8 @@ export function llenarProductos(productos){
             columnaestrella4.appendChild(puntajeproducto4) 
         } 
         columna.appendChild(tarjeta)
-        
+       
+       
         fila.appendChild(columna)
 
 
